@@ -1,0 +1,45 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Комплексный обед{% endblock %}
+
+{% block content %}
+    <aside>
+        <span></span>
+        <h3></h3>
+        <ul>
+            <a href="{%  url 'home_page' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+        </ul>
+        </aside>
+            <h1>Комплексный обед</h1>
+                <main>
+                    <h3>Супы</h3>
+                    {% for el in soup %}
+                    <div class="alert alert-warning">
+                        <h3>{{ el.title1 }}</h3>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Вторые блюда</h3>
+                    {% for e in second_dish %}
+                    <div class="alert alert-warning">
+                    <h3>{{ e.title_second_dish }}</h3>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Салат</h3>
+                    {% for x in salad %}
+                    <div class="alert alert-warning">
+                    <h3>{{ x.title_salad }}</h3>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Напитки</h3>
+                    {% for y in drinks %}
+                    <div class="alert alert-warning">
+                    <h3>{{ y.title_drinks }}</h3>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                </main>
+
+{% endblock %}

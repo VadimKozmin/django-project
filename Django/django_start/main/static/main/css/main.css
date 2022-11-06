@@ -1,0 +1,40 @@
+body {
+    background: #FFBE73;
+}
+
+ul {list-style: none}
+
+ul a {
+    text-decoration: none;
+}
+ul li {
+    color: #090905;
+    display: block;
+    margin-top: 20px;
+}
+
+ul li:hover, aside ul a:hover {
+    color: #fff;
+}
+
+main .features {
+    text-align: center;
+    width: 25%;
+    margin-bottom: 20px
+}
+
+ .alert-warning{
+    color: #090943
+    margin-top: 30px
+
+}
+
+form {
+    margin-left: 1%;
+    width: 400px;
+    margin-top: 30px
+}
+
+h3 {
+
+}

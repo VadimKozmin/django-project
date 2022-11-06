@@ -1,0 +1,130 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Основное меню{% endblock %}
+
+    {% block content %}
+    <aside>
+        <span></span>
+        <h3></h3>
+        <ul>
+            <a href="{%  url 'home_page' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+        </ul>
+        </aside>
+            <main>
+                    <h3 align="center"> Закуски</h3>
+                    {% for e in snacks %}
+                    <div class="alert alert-warning">
+                        <h3>{{ e.title }}</h3>
+                        <p>{{ e.count }}₽</p>
+                        <p>{{ e.description }}</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Салаты</h3>
+                    {% for z in salad %}
+                    <div class="alert alert-warning">
+                        <h3>{{ z.title }}</h3>
+                        <p>{{ z.count }}₽</p>
+                        <p>{{ z.description }}</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Аля-русс</h3>
+                    {% for q in rus %}
+                    <div class="alert alert-warning">
+                        <h3>{{ q.title }}</h3>
+                        <p>{{ q.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Супы</h3>
+                    {% for r in soup %}
+                    <div class="alert alert-warning">
+                        <h3>{{ r.title }}</h3>
+                        <p>{{ r.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Основное</h3>
+                    {% for t in main %}
+                    <div class="alert alert-warning">
+                        <h3>{{ t.title }}</h3>
+                        <p>{{ t.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Десерт</h3>
+                    {% for y in dessert %}
+                    <div class="alert alert-warning">
+                        <h3>{{ y.title }}</h3>
+                        <p>{{ y.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Кофе</h3>
+                    {% for i in coffee %}
+                    <div class="alert alert-warning">
+                        <h3>{{ i.title }}</h3>
+                        <p>{{ i.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Чай</h3>
+                    {% for o in tea %}
+                    <div class="alert alert-warning">
+                        <h3>{{ o.title }}</h3>
+                        <p>{{ o.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Вода</h3>
+                    {% for p in water %}
+                    <div class="alert alert-warning">
+                        <h3>{{ p.title }}</h3>
+                        <p>{{ p.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Соки</h3>
+                    {% for a in juice %}
+                    <div class="alert alert-warning">
+                        <h3>{{ a.title }}</h3>
+                        <p>{{ a.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Газированные напитки</h3>
+                    {% for s in carbon %}
+                    <div class="alert alert-warning">
+                        <h3>{{ s.title }}</h3>
+                        <p>{{ s.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3 align="center">Авторские напитки</h3>
+                    {% for d in author %}
+                    <div class="alert alert-warning">
+                        <h3>{{ d.title }}</h3>
+                        <p>{{ d.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3 align="center">Напитки собственного производства</h3>
+                    {% for f in drinks %}
+                    <div class="alert alert-warning">
+                        <h3>{{ f.title }}</h3>
+                        <p>{{ f.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+                    <h3>Коктейли безалкогольные</h3>
+                    {% for g in coctails %}
+                    <div class="alert alert-warning">
+                        <h3>{{ g.title }}</h3>
+                        <p>{{ g.count }}₽</p>
+                    <p><input type="checkbox" name="a" value="1417"> Выбрать </p>
+                    </div>
+                    {% endfor %}
+            </main>
+    {% endblock %}
+

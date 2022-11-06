@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Ресторан "Башня"{% endblock %}
+
+{% block content %}
+    <aside>
+        <span></span>
+        <h3 align="center">Добро пожаловать!</h3>
+        <ul>
+            <a href="{%  url 'home_page' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+            <a href="{% url 'main_menu' %}"><li><i class="fas fa-utensils"></i> Основное меню</li></a>
+            <a href="{% url 'business' %}"><li><i class="fas fa-utensils"></i> Комплексный обед <br> (Будни, 12:00 - 16:00) </li></a>
+            <a href="{% url 'contacts' %}"><li><i class="fas fa-address-book"></i> Контакты</li></a>
+        </ul>
+        </aside>
+        <main>
+            <div class="features">
+                <h1></h1>
+            </div>
+        </main>
+{% endblock %}

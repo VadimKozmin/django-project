@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <aside>
+        <span></span>
+        <h3></h3>
+        <ul>
+            <a href="{%  url 'home_page' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+        </ul>
+        </aside>
+        <main>
+            <div class="features">
+            <h3>Контакты</h3>
+
+                <p>Подписывайте на нас в социальных сетях: </p>
+                <a class="btn btn-light" href="https://vk.com/bashnya_valuyki" role="button">VK</a>
+                <br>
+                <p> </p>
+                <a class="btn btn-light" href="https://t.me/bashnya_valuyki" role="button">Telegram</a>
+                <br>
+                <p> </p>
+                <a class="btn btn-light" href="https://www.instagram.com/restoranbashnya" role="button" a>Instagram (запрещенный в РФ)</a>
+            </div>
+        </main>
+{% endblock %}
+
